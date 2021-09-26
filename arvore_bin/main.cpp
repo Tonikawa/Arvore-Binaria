@@ -36,22 +36,12 @@ int main()
     A->SetData("A");
     A->SetLeftNode(B);
     A->SetRightNode(C);
-    InfoNode(A);
-    //cout << to_string(A->GetDegree(A));
-    // cout << A->GetDepth(A);
-    // cout << A->GetHeight(A);
-    // cout << A->IsLeaf(A);
-    // cout << A->IsRoot(A);
+    InfoNode(A);   
     
     B->SetData("B");
     B->SetParentNode(A);
     B->SetLeftNode(D);
-    InfoNode(B);
-    // cout << B->GetDegree(B);
-    // cout << B->GetDepth(B);
-    // cout << B->GetHeight(B);
-    // cout << B->IsLeaf(B);
-    // cout << A->IsLeaf(A);
+    InfoNode(B);   
 
     C->SetData("C");
     C->SetParentNode(A);
@@ -69,16 +59,10 @@ int main()
 
     F->SetData("F");
     F->SetParentNode(C);
-    InfoNode(F);
-    // cout << F->GetDegree(F);
-    // cout << F->GetDepth(F);
-    // cout << F->GetHeight(F);
-    // cout << F->IsLeaf(F);
-    //cout << F->IsRoot(F);  
+    InfoNode(F);      
 
     Tree* tree = new Tree(A); 
 //if arvore vazia(false)- continua
-//Percurso para arvore mostrada no documento
 //Em ordem: D->B->A->E->C->F
 //Pre-ordem: A->B->D->C->E->F  1-visitar nó raiz 2-percorrer a subarvore da esquerda e depois da direita em pre ordem
 //Pós ordem: D->B->E->F->C->A  1-percorrer a subarvore da esquerda e depois da direita em pos ordem 2-visitar nó raiz
