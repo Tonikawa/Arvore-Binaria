@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		21B107B926FFFA09000C8113 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B107B826FFFA09000C8113 /* main.swift */; };
+		2126EE27270105E700E23659 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2126EE26270105E700E23659 /* main.cpp */; };
+		21B107C126FFFA50000C8113 /* arvore_bin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21B107C026FFFA50000C8113 /* arvore_bin.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +24,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2126EE26270105E700E23659 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		21B107B526FFFA09000C8113 /* arvore_bin */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = arvore_bin; sourceTree = BUILT_PRODUCTS_DIR; };
-		21B107B826FFFA09000C8113 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		21B107BF26FFFA30000C8113 /* arvore_bin.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = arvore_bin.hpp; sourceTree = "<group>"; };
+		21B107C026FFFA50000C8113 /* arvore_bin.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = arvore_bin.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +60,9 @@
 		21B107B726FFFA09000C8113 /* arvore_bin */ = {
 			isa = PBXGroup;
 			children = (
-				21B107B826FFFA09000C8113 /* main.swift */,
+				2126EE26270105E700E23659 /* main.cpp */,
+				21B107BF26FFFA30000C8113 /* arvore_bin.hpp */,
+				21B107C026FFFA50000C8113 /* arvore_bin.cpp */,
 			);
 			path = arvore_bin;
 			sourceTree = "<group>";
@@ -94,6 +99,7 @@
 				TargetAttributes = {
 					21B107B426FFFA09000C8113 = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
 				};
 			};
@@ -120,7 +126,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21B107B926FFFA09000C8113 /* main.swift in Sources */,
+				2126EE27270105E700E23659 /* main.cpp in Sources */,
+				21B107C126FFFA50000C8113 /* arvore_bin.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,10 +252,17 @@
 		21B107BD26FFFA09000C8113 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QMPGVXKJVA;
 				ENABLE_HARDENED_RUNTIME = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -256,9 +270,15 @@
 		21B107BE26FFFA09000C8113 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QMPGVXKJVA;
 				ENABLE_HARDENED_RUNTIME = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
