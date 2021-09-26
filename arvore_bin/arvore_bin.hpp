@@ -1,9 +1,7 @@
-//
-//  arvore_bin.hpp
-//  arvore_bin
-//
-//  Created by Gabriel Batista Cristiano on 25/09/21.
-//
+//  Created by Gabriel Batista Cristiano
+//  TIA: 32090722
+//  And Fabio Silveira Tanikawa
+//  TIA: 32092563
 
 #ifndef arvore_bin_h
 #define arvore_bin_h

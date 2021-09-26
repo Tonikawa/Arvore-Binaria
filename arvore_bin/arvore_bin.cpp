@@ -1,9 +1,8 @@
-//
-//  arvore_bin.cpp
-//  arvore_bin
-//
-//  Created by Gabriel Batista Cristiano on 25/09/21.
-//
+
+//  Created by Gabriel Batista Cristiano
+//  TIA: 32090722
+//  And Fabio Silveira Tanikawa
+//  TIA: 32092563
 
 #include <string>
 #include <stdio.h>
